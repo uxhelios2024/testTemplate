@@ -1,0 +1,65 @@
+@import '../globals.scss';
+
+.topNavCont {
+    will-change: transform, backdrop-filter; /* Optimize for transform and blur */
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-inline: 2rem;
+    transition-duration: 0.3s;
+    backdrop-filter: blur(8px);
+    z-index: 994;
+
+    .logoCont {
+        height: 100%;
+        display: flex;
+        img {
+            filter: invert(99%) sepia(72%) saturate(74%) hue-rotate(323deg) brightness(113%) contrast(90%);
+            width: 5rem;  
+        }
+    }
+
+    .topNavRight {
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .menuIcon {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        a {
+            color: $textPrimary;
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+
+    .topNavCont {
+        padding-inline: 10%;
+        .topNavRight {
+            .menuIcon {
+                display: none;
+            }
+    
+            a {
+                font-size: 1.1rem;
+                display: flex !important;
+                transition-duration: 0.3s;
+                &:hover {
+                    color: $textBtnPrimary;
+                }
+            }
+        }
+    }
+    
+}

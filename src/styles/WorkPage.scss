@@ -1,0 +1,25 @@
+.workPageCont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    
+    h2 {
+        font-weight: 300;
+    }
+
+    .workDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
