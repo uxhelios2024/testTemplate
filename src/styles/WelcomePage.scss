@@ -12,10 +12,10 @@
     padding-inline: 2rem;
     gap: 1.5rem;
 
-    img:nth-of-type(1) {
+    /*img:nth-of-type(1) {
         filter: invert(99%) sepia(72%) saturate(74%) hue-rotate(323deg) brightness(113%) contrast(90%);
         width: 15rem;  
-    }
+    }*/
 
     .glow1 {
         position: absolute;
@@ -86,10 +86,10 @@
         transform: translate(-50%);
         left: 50%;
 
-        img:nth-of-type(1) {
+        /*img:nth-of-type(1) {
             width: 22rem;
             display: none;
-        }
+        }*/
 
         .glow1 {
             position: absolute;

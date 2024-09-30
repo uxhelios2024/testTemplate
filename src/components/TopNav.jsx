@@ -57,9 +57,7 @@ function TopNav() {
     return (
         <>
             <div className='topNavCont' ref={navRef} style={{ transform: transformStyle, backgroundColor: bgColor }}>
-                <div className='logoCont'>
-                    <img src='/images/noa/NOA3.svg' alt='logoSmall' className='topNavLogo' />
-                </div>
+                
                 <div className='topNavRight'>
                     <MenuIcon className='menuIcon' onClick={handleOpen} />
                     <a href="#about">about</a>
